@@ -42,13 +42,7 @@ const footerCategories = [
     ],
   },
 ]
-function formatDate(date: Date): string {
-  return new Intl.DateTimeFormat('en-US', {
-    year: 'numeric',
-    month: 'long',
-    day: 'numeric'
-  }).format(date)
-}
+
 const menuItems = [
   { title: "Strona Główna", href: "/" },
   {
@@ -191,79 +185,79 @@ const blogPosts = [
     image: "/img/blog-1.jpg",
     link: "/blogpost1/",
     author: "Admin",
-    date: new Date(2024, 9, 2),
+    date: "2 października 2024",
   },
   {
     title: "Kolejny sukces strzelców sportowych z naszej szkoły",
     description: "W dniach 16-18.09.2024 r na strzelnicy sportowej w Bydgoszczy odbył się finał 63. Zawodów Strzeleckich  „0 Srebrne Muszkiety - 2024 ”...",
     image: "/img/blog-2.jpg",
-    link: "/blog/cybersecurity-trends",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 9, 10),
+    date: "1 października 2024",
   },
   {
     title: "SPRZĄTANIE ŚWIATA - POLSKA 2024",
     description: "20 września 2024 roku  uczniowie naszej szkoły  włączyli się po raz kolejny w  akcję „Sprzątanie Świata – Polska 2024 ”. Tegoroczna ogólnopolska akcja odbywa się pod hasłem: „Na Straży Czystej Ziemi...",
     image: "/img/blog-3.jpg",
-    link: "/blog/sustainable-tech-innovation",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 9, 5),
+    date: "30 września 2024",
   },
   {
     title: "IX Europejski Dzień Języków Obcych",
     description: "W dniach 19-20 września wzięliśmy udział w Warsztatach z okazji IX Europejskiego Dnia Języków Obcych , organizowanych przez Uniwersytet Siedlecki. Warsztaty prowadzone w języku angielskim...",
     image: "/img/blog-4.jpg",
-    link: "/blog/rise-of-edge-computing",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 8, 30),
+    date: "26 września 2024",
   },
   {
     title: "DIECEZJALNY DZIEŃ MŁODZIEŻY",
     description: "18 września- wzorem lat ubiegłych-  uczniowie naszej szkoły uczestniczyli w Diecezjalnym Dniu Młodzieży w Drohiczynie. Hasło tegorocznego spotkania: ,,Do wyższych rzeczy zostałem stworzony’’...",
     image: "/img/blog-5.jpg",
-    link: "/blog/blockchain-beyond-cryptocurrency",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 8, 25),
+    date: "24 września 2024",
   },
   {
     title: "UROCZYSTOŚĆ ROZPOCZĘCIA NOWEGO ROKU SZKOLNEGO 2024 / 2025",
     description: "W dzisiejszym dniu, po ponad dwumiesięcznym okresie wakacyjnym, spotkaliśmy się ponownie, pełni  entuzjazmu w murach naszej szkoły na uroczystości rozpoczęcia nowego roku szkolnego 2024 / 2025...",
     image: "/img/blog-6.jpg",
-    link: "/blog/impact-of-5g-on-business",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 8, 20),
+    date: "21 września 2024",
   },
   {
     title: "Ogólnopolski Przegląd Musztry Klas Mundurowych",
     description: "Mamy powód do dumy.IV miejsce w Ogólnopolskim Przeglądzie Musztry Klas Mundurowych. Radom 2024.Przegraliśmy III miejsce w dogrywce 1 punktem .",
     image: "/img/blog-7.jpg",
-    link: "/blog/cloud-migration-strategies",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 8, 15),
+    date: "18 września 2024",
   },
   {
     title: "Posiłek w ciemno",
     description: `17 czerwca uczniowie Zespołu Szkół Nr 1 uczestniczyli w niezwykłym przedsięwzięciu edukacyjno - społecznym "Posiłek w ciemno", przygotowanym przez Kulinarne Poddasze w Siedlcach.   Eksperyment polegał na wyłączeniu zmysłu wzroku... `,
     image: "/img/blog-8.jpg",
-    link: "/blog/future-of-work-remote-hybrid",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 8, 10),
+    date: "10 września 2024",
   },
   {
     title: "Otwarte Zawody Strzeleckie Klas Mundurowych o Puchar Starosty Sokołowskiego",
     description: "W zawodach brała udział młodzież ze szkół: Szkoły im. 72 Pułku Piechoty w Radomiu, Zespołu Szkół Ponadgimnazjalnych im. Jana Kochanowskiego w Węgrowie oraz Zespołu Szkół Nr 1 im. Krzysztofa Kamila Baczyńskiego z Sokołowa Podlaskiego...",
     image: "/img/blog-9.jpg",
-    link: "/blog/data-privacy-digital-age",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 8, 5),
+    date: "2 września 2024",
   },
   {
     title: "Uroczyste ślubowanie kadetów Zespół Szkół Nr 1 im. Krzysztofa Kamila Baczyńskiego w Sokołowie Podlaskim",
     description: "13 maja br. w Zespole Szkół Nr 1 im. K.K. Baczyńskiego odbyła się wyjątkowa uroczystość, ślubowanie na sztandar szkoły uczniów klas pierwszych Oddziału Przygotowania Wojskowego​​, liceum o profilu policyjnym i technikum o profilu wojskowym...",
     image: "/img/blog-10.jpg",
-    link: "/blog/iot-in-smart-cities",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 7, 31),
+    date: "13 Maja 2024",
   },
   {
     title: "Powrót młodzieży z programu Erasmus+",
@@ -271,15 +265,15 @@ const blogPosts = [
     image: "/img/blog-11.jpg",
     link: "/blog/ai-driven-customer-experience",
     author: "Admin",
-    date: new Date(2024, 7, 26),
+    date: "12 Maja 2024",
   },
   {
     title: "Technik logistyk – wycieczka zawodowa do Centrum Logistycznego Lidl w Kałuszynie",
     description: "W dniu 17 maja 2024r. uczniowie klasy 2f  kształcący się w zawodzie technik logistyk wraz z opiekunami: p. Izabelą Malinowską, Izabellą Skórą, Agnieszką Raszuk odwiedzili Centrum Logistyczne Lidl w Kałuszynie oraz zespół parkowo-pałacowy w Mińsku Mazowieckim.",
     image: "/img/blog-12.jpg",
-    link: "/blog/evolution-of-devops",
+    link: "/blog/",
     author: "Admin",
-    date: new Date(2024, 7, 21),
+    date: "17 Maja 2024",
   },
 ]
 
@@ -448,7 +442,7 @@ export function NavbarHeroSliderBlog() {
                     <p className="text-muted-foreground mb-4">{post.description}</p>
                     <div className="text-sm text-muted-foreground">
                       <p>Przez {post.author}</p>
-                      <p>{post.date.toLocaleDateString()}</p>
+                      <p>{post.date}</p>
                     </div>
                   </CardContent>
                   <CardFooter className="p-6 pt-0">
